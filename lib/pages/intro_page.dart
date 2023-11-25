@@ -32,7 +32,12 @@ class IntroPage extends StatelessWidget {
                     style: GoogleFonts.dmSerifDisplay(
                         height: 2, fontSize: 16, color: Colors.grey[300])),
                 const SizedBox(height: 10),
-                const Button(text: 'Getting Started')
+                Button(
+                  text: 'Getting Started',
+                  onTap: () {
+                    Navigator.pushNamed(context, 'menuPage');
+                  },
+                )
               ]),
         ));
   }
